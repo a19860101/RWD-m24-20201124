@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table 表格</h1>
+    <table width="400" height="200" border="1">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td>8</td>
+        </tr>
+    </table>
+    <table width="400" border="1" height="600">
+        <thead>
+            <tr>
+                <th>標題1</th>
+                <th>標題2</th>
+                <th>標題3</th>
+                <th>標題4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td rowspan="2">4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <!-- <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">2</td>
+                <td rowspan="2">3</td>
+                <td rowspan="2">4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>2</td> -->
+                <!-- <td>3</td> -->
+                <!-- <td>4</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">footer</td>
+                <!-- <td>footer</td> -->
+                <!-- <td>footer</td> -->
+                <!-- <td>footer</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
