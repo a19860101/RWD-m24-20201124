@@ -12,7 +12,7 @@
             width: 100%;
         }
         .container {
-            width: 1140px;
+            width: 1000px;
             background-color: #ccc;
             font-size: 0;
             margin-left: auto;
@@ -21,14 +21,40 @@
         .box {
             display: inline-block;
             /* width: 33.33%; */
-            width: calc(100% / 6);
+            width: calc(100% / 4);
             font-size: 16px;
             vertical-align: top;
             padding: 15px;
         }
+        .big {
+            width: 700px;
+            height: 300px;
+            background-color: #fa0;
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .small {
+            width: 300px;
+            height: 300px;
+            background-color: #0af;
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="big">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nam nisi pariatur sequi odit quos quidem veniam ipsum, optio non ipsam voluptate rerum dolor architecto commodi aperiam! Quos, fugiat ipsum!
+        </div>
+        <div class="small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas pariatur temporibus necessitatibus modi quibusdam commodi quos, ratione, aut nam explicabo quasi, iste assumenda earum omnis? Nesciunt itaque corporis nulla vitae?
+        </div>
+    </div>
     <div class="container">
         <div class="box">
             <img src="https://picsum.photos/id/34/300" alt="">
