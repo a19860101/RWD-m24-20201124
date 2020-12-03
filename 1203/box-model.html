@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: #b6b6b6;
+            /*外距*/
+            /* margin: 50px; */
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-top: 80px; */
+            margin-bottom: 30px;
+
+            /*內距*/
+            /* padding: 30px; */
+            padding-top: 30px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+            padding-right: 60px;
+
+            /*邊框*/
+            /* border-width: 5px; */
+            /* border-color: crimson; */
+            /* border-style: solid; */
+            /* border: 5px crimson solid; */
+            border-left: 5px crimson solid;
+            border-right: 5px #14dc14 solid;
+            border-top: 5px #146bdc solid;
+            border-bottom: 5px #dc7f14 solid;
+/* 
+            border-left-color: ;
+            border-left-width: ;
+            border-left-style: ;
+            border-right-color: ;
+            border-right-width: ;
+            border-right-style: ;
+            border-top-color: ;
+            border-top-width: ;
+            border-top-style: ;
+            border-bottom-color: ;
+            border-bottom-width: ;
+            border-bottom-style: ; */
+
+            /* 
+                border-style
+                solid, double, dotted, dashed
+                inset, outset, groove, ridge
+             */
+        }
+        .inline {
+            width: 150px;
+            height: 150px;
+            background: #ffaa00;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            /* padding-top: 50px; */
+
+            border-left: 10px solid red;
+            display: block;
+
+        }
+        /* 
+            block vs inline
+        
+            1. 行內元素沒有寬度與高度
+            2. 行內元素的margin只有左右有效
+            3. 行內元素的padding左右有效，上下雖看的到，但不影響空間，故不可使用
+            4. 行內元素的border左右有效，上下雖看的到，但不影響空間，故不可使用
+
+        
+         */
+
+        .link {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>box model 盒子模型</h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tenetur.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tenetur.
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tenetur.
+    </div>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+    <span class="inline">
+        Lorem ipsum dolor sit amet.
+    </span>
+
+
+    <a href="#">
+        <span class="link">test</span>
+    </a>
+
+    <!-- 
+        行內不可以包住區塊
+
+     -->
+</body>
+</html>

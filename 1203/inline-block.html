@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 0;
+        }
+        .box {
+            width: 300px;
+            background-color: #fa0;
+            padding: 15px;
+
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: top;
+        }
+        /* 
+            # inline-block 問題
+            元素之間會有空隙
+            # 解決方式
+            1. 在父元素設定font-size:0
+            2. 還原元素本身的字體大小
+            3. 設定vertical-align (top,middle,bottom)
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat reprehenderit iste nemo nihil ratione dolore ducimus sit doloremque consequatur, sunt harum, quasi totam adipisci repellendus! Saepe doloribus autem praesentium dignissimos!
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quos cum provident voluptatem numquam sint aut expedita a. Porro nesciunt impedit illum provident eum ipsa ex aperiam deleniti maxime adipisci, possimus eveniet odio iusto veritatis ab rerum nemo quibusdam eaque repudiandae architecto. Ut porro, deserunt iure perferendis necessitatibus nobis cumque?
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit, at reprehenderit iste nemo nihil ratione dolore ducimus sit doloremque consequatur, sunt harum, quasi totam adipisci repellendus! Saepe doloribus autem praesentium dignissimos!
+    </div>
+</body>
+</html>
