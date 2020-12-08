@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+             font-family: "Segoe UI";
+             box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            margin: auto;
+            background-color: #0af;
+
+            /* height: 300px; */
+             overflow: auto;
+        }
+        .box {
+            width: calc(100% / 3);
+            float: left;
+            padding: 15px;
+        }
+
+        footer {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+        }
+        /* 父元素崩塌：當子元素都是浮動時，父元素的高度會消失 */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, deleniti ipsa? Ut consequatur porro ipsum nihil. Ullam, nihil, eligendi enim possimus veritatis velit expedita excepturi culpa quo deleniti at sint!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, deleniti ipsa? Ut consequatur porro ipsum nihil. Ullam, nihil, eligendi enim possimus veritatis velit expedita excepturi culpa quo deleniti at sint!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, deleniti ipsa? Ut consequatur porro ipsum nihil. Ullam, nihil, eligendi enim possimus veritatis velit expedita excepturi culpa quo deleniti at sint!
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, deleniti ipsa? Ut consequatur porro ipsum nihil. Ullam, nihil, eligendi enim possimus veritatis velit expedita excepturi culpa quo deleniti at sint!
+            </p>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>
