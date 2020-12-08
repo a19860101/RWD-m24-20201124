@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            height: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            justify-content: space-evenly;
+            /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+
+            align-items: baseline;
+            /* stretch , flex-start, flex-end, center, baseline*/
+
+            background-color: #aaa;
+        }
+        .box {
+            width:calc(100% / 5);
+            padding: 10px;
+            background-color: #fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus commodi ullam porro non aliquid eveniet ducimus fugiat maxime, cumque explicabo molestias, facilis debitis odit perspiciatis, dolorum ratione sequi quidem? Exercitationem.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus commodi ullam porro non aliquid eveniet ducimus fugiat maxime, cumque explicabo molestias, facilis debitis odit perspiciatis, dolorum ratione sequi quidem? Exercitationem.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus commodi ullam porro non aliquid eveniet ducimus fugiat maxime, cumque explicabo molestias, facilis debitis odit perspiciatis, dolorum ratione sequi quidem? Exercitationem.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus commodi ullam porro non aliquid eveniet ducimus fugiat maxime, cumque explicabo molestias, facilis debitis odit perspiciatis, dolorum ratione sequi quidem? Exercitationem.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

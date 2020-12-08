@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #aaa;
+            margin: auto;
+        }
+        .box {
+            padding: 15px;
+            /* width: 33.33%; */
+            flex-basis: calc(100% / 4);
+            flex-grow: 0;
+            flex-shrink: 0;
+
+        }
+
+        .box:nth-of-type(1){
+            background-color: #fa0;
+            order:2;
+        }
+        .box:nth-of-type(2){
+            background-color: #10c1f7;
+            order: 1;
+        }
+        .box:nth-of-type(3){
+            background-color: #ff0040;
+            order: 3;
+        }
+        /* .box:nth-child(2){
+            background-color: #f00;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title 1</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+        <div class="box">
+            <h2>title 1</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+        <div class="box">
+            <h2>title 2</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+        <div class="box">
+            <h2>title 3</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam praesentium perferendis, blanditiis consectetur iusto ipsum ipsam, eos nulla nesciunt facilis iure rem, tempore voluptas id animi. Ex tempore consectetur officiis.
+        </div>
+    </div>
+</body>
+</html>
