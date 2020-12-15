@@ -13,7 +13,6 @@
 .container {
     width: 1000px;
     margin: auto;
-    background-color: #aaa;
 }
 .row {
     display: flex;
@@ -37,4 +36,15 @@ nav a {
     margin-left: 15px;
     margin-right: 15px;
     text-decoration: none;
+}
+
+/* header */
+header {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-image: url("https://picsum.photos/id/24/1800/600");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
