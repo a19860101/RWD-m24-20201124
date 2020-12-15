@@ -48,3 +48,15 @@ header {
     background-size: cover;
 
 }
+
+header .content {
+    /* flex: 0 0 calc(100% / 3) */
+    width: calc(100% / 3);
+}
+header h2 {
+    font-size: 36px;
+}
+header p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
