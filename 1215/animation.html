@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #0af;
+
+            /* 動畫縮寫 */
+            animation: r1 2s infinite alternate ease-in-out;
+            
+            /* 動畫名稱 */
+            /* animation-name: a2; */
+            /* 動畫時間 */
+            /* animation-duration: 2s; */
+            /* 延遲 */
+            /* animation-delay: 2s; */
+            /* 動畫次數 */
+            /* animation-iteration-count: 5; */
+            /* 停留位置 */
+            /* animation-fill-mode: forwards; */
+            /* 動畫方向 */
+            /* animation-direction: alternate-reverse; */
+            /* reverse, alternate,alternate-reverse */
+            /* 速度 */
+            /* animation-timing-function: linear; */
+            /* ease, ease-in, ease-out, ease-in-out, linear */
+        }
+        @keyframes a1 {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+        }
+        @keyframes a2 {
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+        @keyframes a3 {
+            0% {transform: translate(0,0);}
+            25% {transform: translate(600px,0);}
+            50% {transform: translate(600px,600px);}
+            75% {transform: translate(0,600px);}
+            100% {transform: translate(0,0);}
+        }
+        @keyframes r1 {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

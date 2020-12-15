@@ -1,0 +1,15 @@
+.container {
+    width: 1000px;
+    margin: auto;
+    background-color: #aaa;
+}
+.row {
+    display: flex;
+}
+nav {
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle {
+    display: none;
+}
