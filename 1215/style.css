@@ -10,6 +10,9 @@
     border: 0;
     font-family: "Segoe UI";
 }
+img {
+    width: 100%;
+}
 .container {
     width: 1000px;
     margin: auto;
@@ -78,4 +81,25 @@ header p {
 .btn:hover {
     background-color:  #ff2b2b;
     color: #fff;
+}
+/* about */
+#about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about .container {
+    align-items: center;
+}
+#about .content {
+    width: calc(100% / 2);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 36px;
+}
+#about p {
+    margin-bottom: 30px;
 }
