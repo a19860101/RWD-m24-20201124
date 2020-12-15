@@ -1,3 +1,15 @@
+/* 群組選取 */
+/* html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,div,nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Segoe UI";
+}
 .container {
     width: 1000px;
     margin: auto;
@@ -12,4 +24,17 @@ nav {
 }
 .nav-toggle {
     display: none;
+}
+/* 空格 後代選取 */
+nav .logo {
+    text-align: center;
+}
+nav .logo h1 {
+    letter-spacing: 2px;
+}
+nav a {
+    color: #000;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
 }
