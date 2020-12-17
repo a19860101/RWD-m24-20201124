@@ -203,3 +203,11 @@ header p {
 #contact p {
     margin-bottom: 30px;
 }
+#contact .bank {
+    background-color: #ff9e9e;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
