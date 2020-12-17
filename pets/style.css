@@ -139,13 +139,10 @@ header p {
 }
 #pets .pet {
     background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 20px;
     transition: .3s;
 }
 #pets .pet:hover {
