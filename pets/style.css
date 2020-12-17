@@ -9,6 +9,7 @@
     padding: 0;
     border: 0;
     font-family: "Segoe UI";
+    box-sizing: border-box;
 }
 img {
     width: 100%;
@@ -19,6 +20,7 @@ img {
 }
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 nav {
     position: fixed;
@@ -102,4 +104,17 @@ header p {
 }
 #about p {
     margin-bottom: 30px;
+}
+/* pets */
+#pets .title {
+    width: 100%;
+    text-align: center;
+}
+#pets h2 {
+    font-size: 36px;
+}
+#pets .content {
+    padding: 15px;
+    text-align: center;
+    flex: 1 0 calc(100% / 3)
 }
