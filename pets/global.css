@@ -1,0 +1,58 @@
+/* 群組選取 */
+/* html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,div,nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Segoe UI";
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* button */
+.btn {
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ff9e9e;
+    border-radius: 50px;
+    display: inline-block;
+
+    transition: .3s;
+}
+.btn:hover {
+    background-color:  #ff2b2b;
+    color: #fff;
+}
+.btn-outline {
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1px solid #ff9e9e;
+    border-radius: 50px;
+    display: inline-block;
+    transition: .3s;
+}
+.btn-outline:hover {
+    background-color: #ff9e9e;
+}
