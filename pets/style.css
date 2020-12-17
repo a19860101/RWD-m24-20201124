@@ -136,3 +136,18 @@ header p {
     margin-top: 10px;
     margin-bottom: 15px;
 }
+/* footer */
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #160e0e;
+    color: #cfcfcf;
+}
+footer .container {
+    align-items: center;
+}
+footer .content {
+    flex: 0 0 calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
