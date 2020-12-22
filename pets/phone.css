@@ -106,7 +106,7 @@ header p {
     font-size: 36px;
 } */
 #help .content {
-    flex: 0 0 calc(100% / 5);
+    flex: 0 0 calc(100% / 3);
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
@@ -126,7 +126,7 @@ header p {
     align-items: center;
 }
 #contact .content {
-    width: calc(100% / 2);
+    width: calc(100%);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -152,9 +152,10 @@ footer .container {
     align-items: center;
 }
 footer .content {
-    flex: 0 0 calc(100% / 3);
+    flex: 0 0 calc(100%);
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 40px;
 }
 footer li {
     list-style: none;

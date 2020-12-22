@@ -152,6 +152,7 @@
         flex: 0 0 calc(100% / 3);
         padding-left: 15px;
         padding-right: 15px;
+        margin-bottom: 0;
     }
     footer li {
         list-style: none;
