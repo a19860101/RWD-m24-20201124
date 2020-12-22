@@ -151,3 +151,7 @@ footer .content {
     padding-left: 15px;
     padding-right: 15px;
 }
+footer li {
+    list-style: none;
+    margin-bottom: 15px;
+}
