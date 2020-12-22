@@ -56,7 +56,7 @@ header p {
     align-items: center;
 }
 #about .content {
-    width: calc(100% / 2);
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -75,7 +75,8 @@ header p {
 #pets .content {
     padding: 15px;
     text-align: center;
-    flex: 1 0 calc(100% / 3 - 40px);
+    /* flex: 1 0 calc(100% / 3 - 40px); */
+    flex: 1 0 calc(100% - 40px);
 }
 #pets .pet {
     background-color: #fff;
