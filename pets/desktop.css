@@ -2,10 +2,13 @@
     nav {
         position: fixed;
         width: 100%;
+        /* background-color: transparent; */
+        background-color: initial;
     }
     nav .container {
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
     .nav-toggle {
         display: none;
@@ -13,6 +16,8 @@
     /* 空格 後代選取 */
     nav .logo {
         text-align: center;
+        width: initial;
+
     }
     nav .logo h1 {
         letter-spacing: 2px;
@@ -22,6 +27,13 @@
         margin-left: 15px;
         margin-right: 15px;
         text-decoration: none;
+        display: inline-block;
+        border-bottom: initial;
+    }
+    nav .nav-menu {
+        width: initial;
+        line-height: initial;
+        
     }
 
     /* header */
