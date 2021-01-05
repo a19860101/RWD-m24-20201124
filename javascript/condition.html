@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        if(x > 0){
+            console.log('success 1');
+        }
+
+        if(x > 0){
+            console.log('success 2');
+        }else{
+            console.log('error 2');
+        }
+
+        if(x > 0){
+            console.log('正數');
+        }else if(x < 0){
+            console.log('負數');
+        }else{
+            console.log('error 3');
+        }
+
+        switch(x){
+            case 0:
+                console.log(0);
+                break;
+            case 1:
+                console.log(1);
+                break;
+            case 2:
+                console.log(2);
+                break;
+            default:
+                console.log('error');
+        }
+
+        switch(true){
+            case x > 0:
+                console.log('正數');
+                break;
+            case x < 0:
+                console.log('負數');
+                break;
+            default:
+                console.log('ERROR');
+        }
+    </script>
+</body>
+</html>
