@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Hello Javascript</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, temporibus commodi explicabo ex exercitationem sunt. Soluta, sint, eaque ipsum architecto commodi cupiditate rem, praesentium illo accusamus fugiat id repellat ea?
+        </p>
+        <div id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul id="lists">
+                <li class="list">list 1</li>
+                <li class="list">list 2</li>
+                <li class="list">list 3</li>
+                <li class="list">list 4</li>
+                <li class="list">list 5</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        // 父元素
+        let menuTitle = document.getElementById('menu-title');
+        // console.log(menuTitle);
+        // console.log(menuTitle.parentElement);
+        // console.log(menuTitle.parentElement.parentElement);
+
+        //子元素
+        let container = document.querySelector('.container');
+        // console.log(container.children);
+        let lists = document.querySelector('#lists');
+        // console.log(lists.children);
+    
+        //同輩元素
+        let p = document.querySelector('p');
+        // console.log(p.nextElementSibling);  
+        // console.log(p.previousElementSibling);  
+    
+
+        let menu = document.getElementById('menu');
+        let menu_children = menu.children;
+        console.log(menu_children[1].children)
+    </script>
+
+
+</body>
+</html>
