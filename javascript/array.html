@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array 陣列</h1>
+    <script>
+        // let fruits = new Array();
+        // fruits[0] = 'apple';
+        // fruits[1] = 'banana';
+
+        // let fruits = new Array('apple','banana');
+        
+        let fruits = ['apple','banana','peach','kiwi','melon'];
+
+        // console.log(fruits);
+        // console.log(fruits[0]);
+        // console.log(fruits[1]);
+        // console.log(fruits[2]);
+        // console.log(fruits.length)
+        //陣列迭代
+        // for(let i=0;i<fruits.length;i++){
+        //     console.log(fruits[i]);
+        // }
+
+        //for...in
+        // for(let f in fruits){
+        //     console.log(fruits[f]);
+        // }
+
+        //for...of
+        // for(let f of fruits){
+        //     console.log(f);
+        // }
+
+
+        //forEach方法
+        // fruits.forEach(function(data){
+        //     console.log(data);
+        // });
+        
+        console.log(fruits)
+
+        // fruits.push('pineapple');
+        // fruits.pop();
+        // fruits.unshift('pineapple');
+        // fruits.shift();
+        // fruits[fruits.length] = 'pineapple';
+        // fruits[fruits.length] = 'pear';
+        // fruits.length = 0;
+
+        //splice 拼接
+        // fruits.splice(2,0,'test');
+        // fruits.splice(3,1)
+
+        //slice 切片(產生新陣列，不會影響目前陣列)
+        // let fruits_2 = fruits.slice(1,4);
+        // console.log(fruits_2);
+
+        // join() 陣列->字串
+        
+        // let str = fruits.join('__');
+        // console.log(str);
+
+        // split() 字串->陣列
+        // let s = 'HELLO_JAVASCRIPT';
+        // let a = s.split('_');
+        // console.log(a);
+
+        // console.log(s);
+        // console.log(s.split('').reverse().join(''))
+
+        //toString()轉字串
+        // console.log(fruits.toString());
+
+
+        //concat() 合併
+        let drinks = ['coffee','tea','juice'];
+        // let n = fruits.concat(drinks);
+        let n = drinks.concat(fruits);
+        console.log(n);
+        console.log(fruits)
+
+    </script>
+</body>
+</html>
