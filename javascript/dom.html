@@ -18,6 +18,8 @@
         <li class="list">list 4</li>
         <li class="list">list 5</li>
     </ul>
+    <button onclick="change()">click</button>
+    <button id="btn" onclick="change()">click</button>
     <script>
         // let title = document.getElementById('title');
         // console.log(title)
@@ -40,25 +42,32 @@
         // }
 
 
-        let title = document.querySelector('#title');
-        console.log(title);
+       
+        function change(){
+            let title = document.querySelector('#title');
+            console.log(title);
+            title.style.color = 'blue';
+            let lists = document.querySelectorAll('.list');
+            console.log(lists);
+            for(let list of lists){
+                console.log(list);
+                list.style.color = 'crimson';
+            }
 
-        let lists = document.querySelectorAll('.list');
-        console.log(lists);
-        for(let list of lists){
-            console.log(list);
-            list.style.color = 'crimson';
+            // let p = document.querySelector('p');
+            // console.log(p);
+            // p.style.color = 'greenyellow';
+            let ps = document.querySelectorAll('p');
+            console.log(ps);
+            for(let p of ps){
+                console.log(p);
+                p.style.color = 'greenyellow';
+            }
         }
-
-        // let p = document.querySelector('p');
-        // console.log(p);
-        // p.style.color = 'greenyellow';
-        let ps = document.querySelectorAll('p');
-        console.log(ps);
-        for(let p of ps){
-            console.log(p);
-            p.style.color = 'greenyellow';
-        }
+        let btn = document.querySelector('#btn');
+        // btn.onclick = function(){
+        //     change();
+        // }
     </script>
 </body>
 </html>
