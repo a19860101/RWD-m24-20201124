@@ -19,10 +19,46 @@
         <li class="list">list 5</li>
     </ul>
     <script>
-        let title = document.getElementById('title');
-        console.log(title)
-        title.style.color = 'red';
-        title.style.backgroundColor = 'green';
+        // let title = document.getElementById('title');
+        // console.log(title)
+        // title.style.color = 'red';
+        // title.style.backgroundColor = 'green';
+
+        // let lists = document.getElementsByClassName('list');
+        // console.log(lists);
+
+        // for(let list of lists){
+        //     console.log(list);
+        //     list.style.color = 'orange';
+        // }
+
+        // let ps = document.getElementsByTagName('p');
+        // console.log(ps);
+        // for(let p of ps){
+        //     console.log(p)
+        //     p.style.color = 'greenyellow';
+        // }
+
+
+        let title = document.querySelector('#title');
+        console.log(title);
+
+        let lists = document.querySelectorAll('.list');
+        console.log(lists);
+        for(let list of lists){
+            console.log(list);
+            list.style.color = 'crimson';
+        }
+
+        // let p = document.querySelector('p');
+        // console.log(p);
+        // p.style.color = 'greenyellow';
+        let ps = document.querySelectorAll('p');
+        console.log(ps);
+        for(let p of ps){
+            console.log(p);
+            p.style.color = 'greenyellow';
+        }
     </script>
 </body>
 </html>
