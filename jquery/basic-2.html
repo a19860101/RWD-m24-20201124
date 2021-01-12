@@ -8,18 +8,23 @@
 
 </head>
 <body>
-    <button>click</button>
+    <button class="btn">click</button>
+    <button class="btn2">click-2</button>
     <h1>title</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deserunt quos architecto repudiandae, nulla ipsa animi sapiente commodi magni. Eveniet quas maxime iure exercitationem et, rem dicta aut ducimus sequi?</p>
     <script>
         $(function(){
-            $('button').click(function(){
+            $('.btn').click(function(){
                 $('p').css({
                     color:'red',
                     backgroundColor:'#ccc',
                     padding:15
                 });
             });
+            $('.btn2').click(function(){
+                // $('p').hide();
+                $('p').toggle();
+            })
         })
     </script>
 </body>
