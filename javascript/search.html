@@ -27,19 +27,34 @@
         <li>Mac Pro</li>
     </ul>
     <script>
+        // 不區分大小寫
         function search(){
             let search_txt = document.querySelector('#search').value;
             console.log(search_txt);
 
             let li = document.querySelectorAll('li');
             for(let data of li){
-                if(data.textContent.indexOf(search_txt) > -1){
+                if(data.textContent.toUpperCase().indexOf(search_txt.toUpperCase()) > -1){
                     data.style.display = '';
                 }else{
                     data.style.display = 'none';
                 }
             }
         }
+        //區分大小寫
+        // function search(){
+        //     let search_txt = document.querySelector('#search').value;
+        //     console.log(search_txt);
+
+        //     let li = document.querySelectorAll('li');
+        //     for(let data of li){
+        //         if(data.textContent.indexOf(search_txt) > -1){
+        //             data.style.display = '';
+        //         }else{
+        //             data.style.display = 'none';
+        //         }
+        //     }
+        // }
 
         let s = 'HELLO WORLD';
         console.log(s.indexOf('Z'))
