@@ -19,6 +19,10 @@
             left: 0;
             background-color: #000;
             opacity: .8;
+            
+        }
+        .modal.active .modal-overlay {
+            animation: fade-in 0.5s ;
         }
         .modal-container {
             position: relative;
@@ -28,6 +32,18 @@
             width: 60%;
             margin: 15% auto;
         }
+        .modal.active .modal-container {
+            animation:  fade-in-up 0.5s;
+        }
+        @keyframes fade-in {
+            from {opacity: 0;}
+        }
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(500px)scale(0);
+            }
+        }
     </style>
 </head>
 <body>
@@ -35,7 +51,7 @@
     <a href="#" data-modal="#modal-2" class="modal-btn">modal 2</a>
     
     <div id="modal-1" class="modal">
-        <div class="modal-overlay"></div>
+        <div class="modal-overlay modal-close"></div>
         <div class="modal-container">
             <div class="modal-header">
                 <h2>modal 1</h2>
@@ -54,7 +70,7 @@
         </div>
     </div>
     <div id="modal-2" class="modal">
-        <div class="modal-overlay"></div>
+        <div class="modal-overlay modal-close"></div>
         <div class="modal-container">
             <div class="modal-header">
                 <h2>modal 2</h2>
@@ -89,20 +105,20 @@
         }
         document.onclick = function(e){
             // console.log(e.target.className)
-            // if(e.target.className.indexOf('modal-close') > -1){
-            //     console.log(true);
-            //     let modal = document.querySelectorAll('.modal');
-            //     for(let m of modal){
-            //         m.classList.remove('active');
-            //     }
-            // }
-            if(e.target.className == 'modal-close'){
+            if(e.target.className.indexOf('modal-close') > -1){
                 console.log(true);
                 let modal = document.querySelectorAll('.modal');
                 for(let m of modal){
                     m.classList.remove('active');
                 }
             }
+            // if(e.target.className == 'modal-close'){
+            //     console.log(true);
+            //     let modal = document.querySelectorAll('.modal');
+            //     for(let m of modal){
+            //         m.classList.remove('active');
+            //     }
+            // }
         }
     </script>
 </body>
