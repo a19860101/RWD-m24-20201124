@@ -24,5 +24,14 @@
             <img src="images/iphone-12-white-select-2020.png" class="thumb">
         </div>
     </div>
+    <script>
+        let thumb = document.querySelectorAll('.thumb');
+        for(let t of thumb){
+            t.onclick = function(){
+                let src = this.getAttribute('src');
+                document.querySelector('#picture').setAttribute('src',src);
+            }
+        }
+    </script>
 </body>
 </html>
