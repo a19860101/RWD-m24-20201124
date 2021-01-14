@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Hello Javascript</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, temporibus commodi explicabo ex exercitationem sunt. Soluta, sint, eaque ipsum architecto commodi cupiditate rem, praesentium illo accusamus fugiat id repellat ea?
+        </p>
+        <div id="menu">
+            <h2 id="menu-title">Menu</h2>
+            <ul id="lists">
+                <li class="list">list 1</li>
+                <li class="list">list 2</li>
+                <li class="list">list 3</li>
+                <li class="list">list 4</li>
+                <li class="list">list 5</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            // 父元素
+            // console.log($('#lists').parent());
+            // console.log($('#lists').parents());
+            // console.log($('#lists').parents('.container'));
+
+            // 同輩
+            // console.log($('#menu').siblings());
+            // console.log($('#menu').siblings('#title'));
+            // console.log($('p').next());
+            // console.log($('p').prev());
+            // console.log($('.list').eq(4).text());
+
+            //子元素
+            // console.log($('#lists').children());
+            // console.log($('.container').children());
+            // console.log($('.container').children('#menu'));
+            console.log($('.container').find('#lists'));
+            console.log($('.container').find('.list'));
+
+        })
+
+    </script>
+</body>
+</html>

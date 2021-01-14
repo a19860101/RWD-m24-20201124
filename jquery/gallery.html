@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <style>
+        #picture {
+            width: 600px;
+        }
+        .thumbs img {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="images/iphone-12-blue-select-2020.png" id="picture">
+        <div class="thumbs">
+            <img src="images/iphone-12-blue-select-2020.png" class="thumb">
+            <img src="images/iphone-12-black-select-2020.png" class="thumb">
+            <img src="images/iphone-12-green-select-2020.png" class="thumb">
+            <img src="images/iphone-12-red-select-2020.png" class="thumb">
+            <img src="images/iphone-12-white-select-2020.png" class="thumb">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.thumb').click(function(){
+                let newImg = $(this).attr('src');
+                $('#picture').attr('src',newImg);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI";
+        }
+        .container {
+            width: 600px;
+            margin: auto;
+        }
+        h2 {
+            background-color: #bbb;
+            padding: 15px;
+            border-bottom: 1px solid #888;
+            transition: .3s;
+        }
+        h2:hover {
+            background-color: #ffe712;
+        }
+        h2.active {
+            background-color: #ffe712;
+        }
+        p {
+            background-color: #ddd;
+            padding: 15px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Title 1</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis distinctio facilis unde optio voluptatem temporibus perspiciatis nisi nihil quod? Id, modi? Quod quia laboriosam nemo illum vitae porro delectus nobis?
+        </p>
+        <h2>Title 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dicta perferendis quibusdam suscipit reprehenderit mollitia eos omnis vel quae, eius illum minima, obcaecati beatae ratione odit hic distinctio possimus ab sunt reiciendis excepturi laborum. Temporibus deserunt ipsa omnis error sit. Numquam cumque temporibus consequatur sequi dicta, sit doloremque ut? Reprehenderit.
+        </p>
+        <h2>Title 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto, dolor dolorem, voluptatibus voluptas nemo obcaecati neque distinctio minus in labore porro sint iure illo ex modi sequi mollitia reprehenderit.
+        </p>
+        <h2>Title 4</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aliquid illum ipsam sapiente quam debitis nisi, magnam consequatur qui alias dicta vero doloremque quia nihil quas. Similique, illum nemo. Dolor alias illo asperiores modi voluptas, a odit vel nam. Delectus!
+        </p>
+    </div>
+    <script>
+        $(function(){
+            $('h2').click(function(){
+                console.log('test');
+                // $(this).next().toggle(600);
+                // $(this).next().fadeToggle();
+                $(this).next().slideToggle();
+                $(this).toggleClass('active');
+                // addClass, removeClass, toggleClass
+            })
+        })
+    </script>
+</body>
+</html>

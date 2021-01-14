@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI";
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+
+            position: fixed;
+        }
+        nav a {
+            color: #eee;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        nav a.active {
+            color: #fa0;
+            text-decoration: underline;
+        }
+        #about,#service,#product,#contact {
+            height: 100vh;
+        }
+        #about {
+            background-color: #f8dc81;
+        }
+        #service {
+            background-color: #eff7e1;
+        }
+        #product {
+            background-color: #a2d0c1;
+        }
+        #contact {
+            background-color: #214151;
+        }
+        #gotop {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #222;
+            text-decoration: none;
+            right: 15px;
+            bottom: 15px;
+            position: fixed;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" data-target="#about">About</a>
+        <a href="#" data-target="#service">Service</a>
+        <a href="#" data-target="#product">Product</a>
+        <a href="#" data-target="#contact">Contact</a>
+    </nav>
+    <div id="about"></div>
+    <div id="service"></div>
+    <div id="product"></div>
+    <div id="contact"></div>
+    <a href="#" id="gotop">TOP</a>
+    <script>
+        $(function(){
+            $('nav').find('a').click(function(e){
+                let target = $(this).data('target');
+                // console.log(target);
+                let offset = $(target).offset().top;
+                // console.log(offset);
+                $('html,body').animate({
+                    scrollTop: offset
+                });
+
+                $('nav').find('a').removeClass('active');
+                $(this).addClass('active');
+                
+                e.preventDefault();
+            })
+            $('#gotop').click(function(e){
+                
+                $('html,body').animate({
+                    scrollTop: 0
+                })
+                e.preventDefault();
+                // return false;
+            })
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                console.log(h)
+                if(h > 600){
+                    // $('#gotop').show();
+                    $('#gotop').fadeIn();
+                }else{
+                    // $('#gotop').hide();
+                    $('#gotop').fadeOut();
+                }
+            });
+        })
+    </script>
+</body>
+</html>
