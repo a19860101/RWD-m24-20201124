@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'https://data.epa.gov.tw/api/v1/aqx_p_432?limit=1000&api_key=9be7b239-557b-4c10-9775-78cadfc555e9&format=json',
+                success(e){
+                    console.log(e);
+                    
+                    // for(let data of e.records){
+                    //     // console.log(data.County);
+                    //     // console.log(data['PM2.5']);
+                    //     let c = `
+                    //     <div>
+                    //         <h2>測站名稱 ${data.County} -- ${data.SiteName}</h2>
+                    //         <div>一氧化碳: ${data.CO}</div>    
+                    //         <div>一氧化氮: ${data.NO}</div>    
+                    //         <div>二氧化氮: ${data.NO2}</div>    
+                    //         <div>臭氧: ${data.O3}</div>    
+                    //         <div>懸浮微粒PM2.5: ${data["PM2.5"]}</div>    
+                    //     </div>
+                    //     `;
+                    //     $('.container').append(c);
+                    // }
+                    $(e.records).each(function(){
+                        console.log(this.SiteName)
+                        console.log(this.NO)
+                        let c = `
+                        <div>
+                            <h2>測站名稱 ${this.County} -- ${this.SiteName}</h2>
+                            <div>一氧化碳: ${this.CO}</div>    
+                            <div>一氧化氮: ${this.NO}</div>    
+                            <div>二氧化氮: ${this.NO2}</div>    
+                            <div>臭氧: ${this.O3}</div>    
+                            <div>懸浮微粒PM2.5: ${this["PM2.5"]}</div>    
+                        </div>
+                        `;
+                        $('.container').append(c);
+                    })
+                },
+                error(){}
+            })
+        })
+    </script>
+</body>
+</html>
