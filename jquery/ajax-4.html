@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <select name="" id="city">
+        <option>--請選擇--</option>
+        <option value="Taipei">台北</option>
+        <option value="Tokyo">東京</option>
+        <option value="Seoul">首爾</option>
+        <option value="Bangkok">曼谷</option>
+    </select>
+    <div class="container"></div>
+    <script>
+        $(function(){
+            $('#city').change(function(){
+                $('.container').empty();
+                let city = $('#city').val();
+                $.ajax({
+                    url:'https://api.openweathermap.org/data/2.5/forecast',
+                    data: {
+                        q:city,
+                        appid: 'b1ecbccd638b763d489602917ba47cc3',
+                        units: 'metric',
+                        lang: 'zh_TW'
+                    },
+                    success(e){
+                        console.log(e);
+                        let myDate = new Date(1611198000 * 1000);
+                        // console.log(myDate.toDateString());
+                        // console.log(myDate.toTimeString());
+                        // console.log(myDate.getFullYear());
+                        // console.log(myDate.getMonth()+1);
+                        // console.log(myDate.getDate());
+                        // console.log(myDate.getDay());
+                        // console.log(myDate.getHours());
+                        console.log(myDate.getMinutes());
+                        // console.log(myDate.getSeconds());
+                                
+                        for(let list of e.list){
+                            // console.log(list);
+                            // console.log(list.dt);
+                            //時間戳記 timestamp
+                            let myDate = new Date(list.dt * 1000);
+                            let day = ['日','一','二','三','四','五','六'];
+                            let day_jp = ['日','月','火','水','木','金','土'];
+                            let c = `
+                                    <h2>
+                                        ${myDate.getFullYear()}-${myDate.getMonth()+1}-${myDate.getDate()}(${day[myDate.getDay()]}) ${myDate.getHours()}時 ${list.weather[0].description}</h2>
+                                    <img src="http://openweathermap.org/img/wn/${list.weather[0].icon}@2x.png">
+                                    <div>平均溫度 ${list.main.temp}</div>
+                                    <div>最高溫 ${list.main.temp_max} / 最低溫 ${list.main.temp_min}</div>
+                                    <div>體感溫度 ${list.main.feels_like}</div>
+                                `;
+                            $('.container').append(c);
+                        }
+                    }
+                })
+            })
+            
+        })
+    </script>
+</body>
+</html>
