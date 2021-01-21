@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    <style>
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://picsum.photos/id/200/1600/1200" data-lightbox="g" data-title="氂牛">
+        <img src="https://picsum.photos/id/200/1600/1200" alt="">
+    </a>
+    <a href="https://picsum.photos/id/100/1600/1200" data-lightbox="g" data-title="海灘">
+        <img src="https://picsum.photos/id/100/1600/1200" alt="">
+    </a>
+    <a href="https://picsum.photos/id/301/1600/1200" data-lightbox="g" data-title="落葉">
+        <img src="https://picsum.photos/id/301/1600/1200" alt="">
+    </a>
+    <a href="https://picsum.photos/id/101/1600/1200" data-lightbox="g" data-title="建築物">
+        <img src="https://picsum.photos/id/101/1600/1200" alt="">
+    </a>
+    <script>
+        lightbox.option({
+            'resizeDuration': 400,
+            'fadeDuration': 400,
+            'imageFadeDuration': 400,
+            'albumLabel': "%1 / %2",
+            'showImageNumberLabel': true
+        })
+    </script>
+</body>
+</html>
