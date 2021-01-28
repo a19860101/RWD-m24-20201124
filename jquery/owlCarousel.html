@@ -14,6 +14,23 @@
             width: 1000px;
             margin: auto;
         }
+        button {
+            outline: 0;
+        }
+        /* .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+            outline: 0;
+        } */
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: transparent;
+            color: #fa0;
+        }
+        .owl-theme .owl-dots .owl-dot.active span, 
+        .owl-theme .owl-dots .owl-dot:hover span{
+            background-color: #0af;
+        }
+        .owl-theme .owl-dots .owl-dot span {
+            background-color: #0fa;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +52,7 @@
         $(function(){
             $('#slider').owlCarousel({
                 items: 1,
-                autoplay: true,
+                // autoplay: true,
                 autoplayTimeout: 3800,
                 autoplaySpeed: 800,
                 loop:true,
