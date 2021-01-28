@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" />
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            margin: 400px auto;
+        }
+        .box1 {background-color: crimson;}
+        .box2 {background-color: #dcbe14;}
+        .box3 {background-color: #14b4dc;}
+        .box4 {background-color: #38eb73;}
+        .box5 {background-color: #9d14dc;}
+        .box6 {background-color: #3914dc;}
+        .box7 {background-color: #a6d32c;}
+        .box8 {background-color: #68001f;}
+    </style>
+</head>
+<body>
+    <!-- 
+        data-wow-delay, 延遲
+        data-wow-offset, 偏移
+        data-wow-iteration, 次數
+        data-wow-duration, 動畫長度
+
+     -->
+    <div class="container">
+        <div class="box box1 wow fadeInLeft" data-wow-iteration="infinite"></div>
+        <div class="box box2 wow fadeInLeft" data-wow-offset="200"></div>
+        <div class="box box3 wow fadeInLeft"></div>
+        <div class="box box4 wow fadeInLeft"></div>
+        <div class="box box5 wow fadeInLeft"></div>
+        <div class="box box6 wow fadeInLeft"></div>
+        <div class="box box7 wow fadeInLeft"></div>
+        <div class="box box8 wow fadeInLeft"></div>
+    </div>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
