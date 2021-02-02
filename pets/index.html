@@ -182,7 +182,7 @@
     <script>
         new WOW().init();
         $(function(){
-            $('.nav-menu').find('a').click(function(){
+            $('.nav-menu').find('a').click(function(e){
                 let target = $(this).data('target');
                 console.log(target);
                 let offset = $(target).offset().top;
@@ -190,6 +190,13 @@
                 $('body,html').animate({
                     scrollTop: offset
                 })
+                e.preventDefault();
+            })
+            $('#gotop').click(function(e){
+                $('html,body').animate({
+                    scrollTop:0
+                })
+                e.preventDefault();
             })
         })
     </script>
