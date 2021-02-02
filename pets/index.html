@@ -178,7 +178,7 @@
             </div>
         </div>
     </footer>
-    <a href="#" id="gotop">TOP</a>
+    <a href="#" id="gotop" class="animated">TOP</a>
     <script>
         new WOW().init();
         $(function(){
@@ -201,14 +201,17 @@
             $(window).scroll(function(){
                 let h = $(window).scrollTop();
                 console.log(h);
+                let animateIn = 'rollIn';
+                let animateOut = 'rollOut';
+
                 if(h > 800){
                     // $('#gotop').show();
                     // $('#gotop').fadeIn()
-                    $('#gotop').show().removeClass('animated fadeOutDown').addClass('animated fadeInRight');
+                    $('#gotop').show().removeClass(animateOut).addClass(animateIn);
                 }else{
                     // $('#gotop').hide();
                     // $('#gotop').fadeOut();
-                    $('#gotop').removeClass('animated fadeInRight').addClass('animated fadeOutDown')
+                    $('#gotop').removeClass(animateIn).addClass(animateOut)
                 }
             })
         })
