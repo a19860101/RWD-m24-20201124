@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" />
     <style>
         #gotop {
-            display: inline-block;
+            display: none;
             width: 50px;
             height: 50px;
             background-color: #222;
@@ -184,9 +184,9 @@
         $(function(){
             $('.nav-menu').find('a').click(function(e){
                 let target = $(this).data('target');
-                console.log(target);
+                // console.log(target);
                 let offset = $(target).offset().top;
-                console.log(offset);
+                // console.log(offset);
                 $('body,html').animate({
                     scrollTop: offset
                 })
@@ -197,6 +197,17 @@
                     scrollTop:0
                 })
                 e.preventDefault();
+            })
+            $(window).scroll(function(){
+                let h = $(window).scrollTop();
+                console.log(h);
+                if(h > 800){
+                    // $('#gotop').show();
+                    $('#gotop').fadeIn()
+                }else{
+                    // $('#gotop').hide();
+                    $('#gotop').fadeOut();
+                }
             })
         })
     </script>
