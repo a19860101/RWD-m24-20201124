@@ -6,6 +6,9 @@
         background-color: initial;
         transition: .5s;
         z-index: 9999;
+
+        padding-top: 0;
+        padding-bottom: 0;
     }
     nav.active {
         background-color:#222;
