@@ -203,10 +203,12 @@
                 console.log(h);
                 if(h > 800){
                     // $('#gotop').show();
-                    $('#gotop').fadeIn()
+                    // $('#gotop').fadeIn()
+                    $('#gotop').show().removeClass('animated fadeOutDown').addClass('animated fadeInRight');
                 }else{
                     // $('#gotop').hide();
-                    $('#gotop').fadeOut();
+                    // $('#gotop').fadeOut();
+                    $('#gotop').removeClass('animated fadeInRight').addClass('animated fadeOutDown')
                 }
             })
         })
