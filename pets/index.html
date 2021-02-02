@@ -229,6 +229,11 @@
             $(window).resize(function(){
                 let w = $('body').width();
                 console.log(w);
+                if(w > 600){
+                    $('.nav-menu').show();
+                }else{
+                    $('.nav-menu').hide();
+                }
             });
         })
     </script>

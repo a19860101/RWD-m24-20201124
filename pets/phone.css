@@ -13,6 +13,7 @@ nav .container {
     position: absolute;
     right: 15px;
     top: 15px;
+    cursor: pointer;
 }
 /* 空格 後代選取 */
 nav .logo {
