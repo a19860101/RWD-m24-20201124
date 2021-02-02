@@ -34,7 +34,7 @@ nav a {
 nav .nav-menu {
     width: 100%;
     line-height: 50px;
-    
+    display: none;
 }
 /* header */
 header {
