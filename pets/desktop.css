@@ -4,6 +4,8 @@
         width: 100%;
         /* background-color: transparent; */
         background-color: initial;
+        transition: .5s;
+        z-index: 9999;
     }
     nav.active {
         background-color:#222;
