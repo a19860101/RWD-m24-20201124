@@ -5,6 +5,14 @@
         /* background-color: transparent; */
         background-color: initial;
     }
+    nav.active {
+        background-color:#222;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    nav.active a , nav.active h1, nav.active p{
+        color: #fff;
+    }
     nav .container {
         justify-content: space-between;
         align-items: center;
