@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+            margin: 10px;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #0af;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <script>
+        gsap.defaults({duration: 3,delay:0.5});
+        gsap.to('.box1',{x: 500,ease: 'power1'})
+        gsap.to('.box2',{x: 500, ease: 'power2'})
+        /*
+            linear,
+            elastic,
+            back,
+            bounce,
+            steps()
+
+            https://greensock.com/docs/v3/Eases
+        */
+    </script>
+</body>
+</html>
