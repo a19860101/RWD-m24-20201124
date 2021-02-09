@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #fa0;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>  
+    
+    <div>
+        <button id="play">Play 1</button>
+        <button id="play2">Play 2</button>
+        <button id="pause">Pause</button>
+        <button id="restart">Restart</button>
+        <button id="reverse">Reverse</button>
+    </div>
+    <script>
+        let ani_1 = gsap.to('.box',{x: 500, duration: 5, paused: true});
+        let ani_2 = gsap.to('.box',{rotate: 360, duration: 5, paused: true});
+
+        document.getElementById('play').onclick = function(){
+            console.log('play');
+            ani_1.play();
+        }
+        document.getElementById('pause').onclick = function(){
+            ani_1.pause();
+        }
+        document.getElementById('restart').onclick = function(){
+            ani_1.restart();
+        }
+        document.getElementById('reverse').onclick = function(){
+            ani_1.reverse();
+        }
+        document.getElementById('play2').onclick = function(){
+            ani_2.play();
+        }
+    </script>
+</body>
+</html>

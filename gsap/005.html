@@ -20,9 +20,23 @@
     <div class="box"></div>    
     <div class="box"></div>    
     <div class="box"></div>    
+    <div class="box"></div>    
+    <div class="box"></div>    
+    <div class="box"></div>    
     <script>
         gsap.defaults({duration: 3})
-        gsap.to('.box',{x: 500,stagger: 0.1,ease:'bounce',delay: 0.5})
+        gsap.to('.box',{
+            x: 500,
+            stagger: {
+                each: 0.5,
+                // amount:0.5,
+                from: 'random'
+                /*
+                    start,end, center,edges, random
+                */
+            },
+            ease:'power2',
+            delay: 0.5})
     </script>
 </body>
 </html>

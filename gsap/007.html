@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <style>
+        a {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="a1">HELLO GSAP!!</h1>
+    <p class="a1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod fuga officia odio qui, suscipit dolorem eum ullam debitis fugit maxime quos eos laboriosam perferendis illo quaerat placeat. Numquam, dicta.
+    </p>
+    <a href="#" class="a1">More</a>
+    <script>
+        gsap.defaults({duration: 1});
+
+        // gsap.from('h1',{opacity: 0});
+        // gsap.from('p',{opacity: 0,delay: 0.5});
+        // gsap.from('a',{opacity: 0,delay: 1});
+    
+        // gsap.from('.a1',{opacity: 0, stagger: 1})
+
+        // let tl = gsap.timeline();
+        // tl.from('h1',{opacity:0,y:-100,ease:'back'})
+        //     .from('p',{opacity:0,x:-100,ease:'power4'})
+        //     .from('a',{scale:0,rotate:360,ease:'power4'})
+        gsap.timeline()  
+            .from('h1',{opacity:0,y:-100,ease:'back'})
+            .from('p',{opacity:0,x:-100,ease:'power4'})
+            .from('a',{scale:0,rotate:360,ease:'power4'})
+        
+    </script>
+
+</body>
+</html>
